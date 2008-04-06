@@ -148,7 +148,7 @@ human_select_move(Move, MovesList):-
 	read(SelectedRow),
 	writeln('Enter the Column: '),
 	read(SelectedColum),
-	member(Move, MovesList),!,
+	member(Move, MovesList),
 	nth0(0, Move, SelectedRow),
 	nth0(1, Move, SelectedColum).
 
