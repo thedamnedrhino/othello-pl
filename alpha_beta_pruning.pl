@@ -57,9 +57,9 @@ alpha_beta_pruning(Depth, State, Color, NewState, Value, Alpha, Beta) :-
 	Depth > 0,
 	garbage_collect,
 	find_states(State, Color, StatesList),
-	length(StatesList, L),
+	/*length(StatesList, L),
 	writef('number of boards %d, depth %d\n', [L,Depth]),
-	/* first_n_elements(7, BoardsList, NBoardsList),*/
+	first_n_elements(7, BoardsList, NBoardsList),*/
 	rival_color(Color, RivalColor),
 	NDepth is Depth - 1,
 	catch(
