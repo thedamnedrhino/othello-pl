@@ -171,7 +171,7 @@ human_select_move(Move, MovesList):-
  */
 machine_select_move(Board, Depth, Color, FinalBoard):-
 	garbage_collect,
-	alpha_beta_prunning(Board, Depth, Color, FinalBoard, _).
+	alpha_beta_pruning(Board, Depth, Color, FinalBoard, _).
 
 
 select_mode(Mode):-
