@@ -364,7 +364,7 @@ count_piece(Color, Color, CurrentPieces, CurrentRivalPieces, NCurrentPieces, Cur
 	NCurrentPieces is CurrentPieces + 1,!.
 
 count_piece(Color, RivalColor, CurrentPieces, CurrentRivalPieces, CurrentPieces, NCurrentRivalPieces):-
-	rivalColor(Color, RivalColor),
+	rival_color(Color, RivalColor),
 	NCurrentRivalPieces is CurrentRivalPieces + 1,!.
 
 direction_offsets(OffsetsList) :-
