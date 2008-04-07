@@ -1,0 +1,35 @@
+Para empezar el juego debe abrir el programa swi-prolog.
+
+En GNU/Linux, abra la terminal, navegue hacia la carpeta del programa y ejecute swipl.
+Luego consulte el programa con [othello]., luego llame a init. para cargar el resto de archivos.
+En Windows, ejecute el programa através del menú inicio, y consulte todos los archivos.
+
+Iniciar el juego
+================
+El juego inicia con la relación play/1, el valor que recibe es la profundidad máxima de la búsqueda.
+La profundidad máxima que se ha probado satisfactoriamente es 5, cualquier número mayor a ese podría
+hacer que la búsqueda se quede sin memoria en algún punto del juego.
+
+? play(5).
+
+Seleccionar el modo
+===================
+Debe seleccionar alguno de los modos de juego. El modo se selecciona escribiendo el número correspondiente
+y luego punto y enter. 
+
+Select a game mode
+1. human vrs machine
+2. machine vrs human
+3. human vrs human
+Enter a number:
+1.
+
+Seleccionar la jugada
+=====================
+Debe escoger el número de fila y columna en la que quiere colocar una ficha. Igual que en la selección de modo, se
+escoge escribiendod el número, luego punto y enter.
+
+Black player turn (X)
+Enter the Row: 4.
+Enter the Column: 5.
+
