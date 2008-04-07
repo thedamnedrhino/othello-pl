@@ -115,8 +115,12 @@ final(Board, Value):-
 
 eval(Board, Value):-
 	count_pieces(black, Board, BlackPieces, WhitePieces),
-	Value is BlackPieces - WhitePieces.
-
+	HeuristicValue1 is BlackPieces - WhitePieces,
+	valid_positions(Board, black, BlackValidMoves),
+	valid_positions(Board, white, WhiteValidMoves),
+	HeuristicValue2 is BlackValidMoves - WhiteValidMoves,
+	max_list([HeuristicValue1,HeuristicValue2], Value).
+	
 empty_on_board(Board):-
 	member(Row, Board),
 	member(Piece, Row),
